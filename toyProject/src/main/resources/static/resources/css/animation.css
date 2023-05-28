@@ -1,0 +1,52 @@
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/* 이 클래스 이름을 사용함으로써 버튼 클릭시 이쁘게 넘어간다.*/
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.fadeOut{
+    animation: fadeOut;
+    animation-duration: 0.5s;
+}
+
+/* animation속성을 정해주고 그 정해진 속성값을 @keyframes의 이름으로 작성한다 */
+/* @keyframes를 하나의 스테이지(구간)들이며 각 스테이지들을 정의한다고 생각한다.  */
+/* 애니메이션 사용시 Vendor Prefixes를 브라우저별로 사용해야한다. 크롬, 사파리는 -webkit이다.
+   오늘날은 버젼이 많이 업그레이드 되어서 잘 사용하지 않지만 버젼이 낮은 css나 브라우저에 표시하기
+   위해서는 사용해야한다.  */
